@@ -70,7 +70,7 @@
 			}
 
 			/* Hide the main content initially */
-			.main-content.hidden {
+			.page-content.hidden {
 				display: none;
 			}
 
@@ -127,8 +127,8 @@
 			<div class="loader"></div>
 		</div>
 
-		<!-- Main Content (Initially Hidden) -->
-		<div class="main-content hidden">
+		<!-- Page Content (Initially Hidden) -->
+		<div class="page-content hidden">
 
 			<!-- Sticky Navbar -->
 			<nav class="fixed w-full top-0 z-50 bg-gray-800 bg-opacity-90 text-white">
@@ -354,7 +354,7 @@
 								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Elektrik Takviyesi Hizmeti</li>
 								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Aparatla Çekim Hizmeti</li>
 								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Ticari Araç Çekme Hizmeti</li>
-								<li class="border-2 border-amber-700 rounded-md p-3 text-center">Yeddiemin Otopark Hizmeti (Otoparkımızda 7/24 görevli bulunmaktadır.)</li>
+								<li class="border-2 border-amber-700 rounded-md p-3 text-center">Yeddiemin Otopark Hizmeti <span class="text-lg text-gray-600">(Otoparkımızda 7/24 görevli bulunmaktadır.)</span></li>
 							</ul>	
 						</div>
 					</div>
@@ -427,7 +427,7 @@
 			window.addEventListener('load', function () {
 				// Select the loading screen and main content elements
 				var loadingScreen = document.querySelector('.loading-screen');
-				var mainContent = document.querySelector('.main-content');
+				var mainContent = document.querySelector('.page-content');
 
 				// Hide the loading screen
 				loadingScreen.style.display = 'none';
