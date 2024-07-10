@@ -2,13 +2,12 @@
 			<nav class="fixed w-full top-0 z-50 bg-gray-800 bg-opacity-90 text-white">
 				<div class="container mx-auto">
 					<div class="flex justify-between items-center py-2">
-						<div class="ml-8 md:ml-12 mr-auto text-lg">Deniz Oto Kurtarma</div>
+						<a href="/" class="ml-8 md:ml-12 mr-auto text-lg">Deniz Oto Kurtarma</a>
 						<!-- Responsive Menu Links (Initially Hidden) -->
 						<div id="menuLinks" class="hidden md:flex space-x-4 ml-auto mr-12">
-							<a href="#anasayfa" class="hover:bg-gray-700 px-3 py-4 rounded">Anasayfa</a>
-							<a href="#gorseller" class="hover:bg-gray-700 px-3 py-4 rounded">Görseller</a>
-							<a href="#hizmetlerimiz" class="hover:bg-gray-700 px-3 py-4 rounded">Hizmetlerimiz</a>
-							<a href="#iletisim" class="hover:bg-gray-700 px-3 py-4 rounded">İletişim</a>
+							<a href="/gorseller" class="hover:bg-gray-700 px-3 py-4 rounded">Görseller</a>
+							<a href="/hizmetlerimiz" class="hover:bg-gray-700 px-3 py-4 rounded">Hizmetlerimiz</a>
+							<a href="/iletisim" class="hover:bg-gray-700 px-3 py-4 rounded">İletişim</a>
 						</div>
 						<!-- Responsive Menu Button -->
 						<div class="md:hidden mx-6 pt-2 ml-auto">
@@ -27,19 +26,15 @@
 				<ul>
 					<li><h2 class="py-4 px-6 text-sky-500 border-b border-white">Menü</h2></li>
 					<li>
-						<a href="#anasayfa" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
-							>Anasayfa</a>
-					</li>
-					<li>
-						<a href="#gorseller" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
+						<a href="/gorseller" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
 							>Görseller</a>
 					</li>
 					<li>
-						<a href="#hizmetlerimiz" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
+						<a href="/hizmetlerimiz" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
 							>Hizmetlerimiz</a>
 					</li>
 					<li>
-						<a href="#iletisim" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
+						<a href="/iletisim" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
 							>İletişim</a>
 					</li>
 				</ul>

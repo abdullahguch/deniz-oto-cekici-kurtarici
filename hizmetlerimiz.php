@@ -4,7 +4,7 @@
 		<?php include "google-scripts.php"; ?>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Bandırma Deniz Oto Kurtarıcı Çekici - 7/24 Yol Yardım</title>
+		<title>Hizmetlerimiz - Bandırma Deniz Oto Kurtarıcı Çekici - 7/24 Yol Yardım</title>
 		<?php include "head.php"; ?>
 	</head>
 	<body class="bg-gray-200">
@@ -21,16 +21,21 @@
 
 			<!-- Content Sections -->
 			<main>
-				<div id="anasayfa" class="h-screen flex items-center justify-center text-xl bg-cover">
-					<!-- Anasayfa section -->
-					<div class="absolute bg-white bg-opacity-50 h-screen w-full z-10"></div>
-					<div class="z-20 text-center bg-black bg-opacity-70 mx-4 md:mx-12 px-6 py-12 text-gray-200 rounded-md">
-						<h1 class="text-4xl md:text-6xl font-bold pb-6">Deniz Oto Kurtarma</h1>
-						<p class="py-4 text-xl md:text-2xl">Bandırma merkezli olarak Balıkesir, Çanakkale ve Bursa bölgelerinde yol yardımı ve çekici/kurtarıcı hizmetimizle <span class="inline-block text-green-600 text-3xl md:text-4xl border border-white rounded-md p-1 md:p-2 bg-transparent hover:bg-white transition duration-300">7/24</span> yanınızdayız.
-						</p>
-						<p class="py-4 text-xl md:text-2xl">Size sadece bir telefon mesafesindeyiz.</p>
-						<p class="text-red-500 text-4xl md:text-5xl py-4">ACİL HATTIMIZ:</p>
-						<a href="tel:+905515530228" class="text-4xl md:text-5xl text-green-600">+90 551 553 0228</a>
+				<div id="hizmetlerimiz" class="flex pt-24">
+					<!-- Görseller section -->
+					<div class="container mx-auto px-6 py-4">
+						<h2 class="text-4xl font-bold mb-10 text-center heading">Hizmetlerimiz</h2>
+						<div>
+							<ul class="text-xl">
+								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Araba Çekici Hizmeti</li>
+								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Motosiklet Çekici Hizmeti</li>
+								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Özel Araç Çekici Hizmeti</li>
+								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Elektrik Takviyesi Hizmeti</li>
+								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Aparatla Çekim Hizmeti</li>
+								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Ağır Ticari Araç Çekim Hizmeti (Tır, 10 Teker Kamyon, Kırkayak)</li>
+								<li class="border-2 border-amber-700 rounded-md p-3 text-center">Yeddiemin Otopark Hizmeti <span class="text-lg text-gray-600">(Otoparkımızda 7/24 görevli bulunmaktadır.)</span></li>
+							</ul>	
+						</div>
 					</div>
 				</div>
 			</main>
@@ -62,7 +67,8 @@
 			</button>
 
 		</div>
-		
+
+		<?php include "footer.php"; ?>
 		<?php include "custom-scripts.php"; ?>
 		<script src="assets/lightbox2/js/lightbox-plus-jquery.min.js"></script>
 	</body>

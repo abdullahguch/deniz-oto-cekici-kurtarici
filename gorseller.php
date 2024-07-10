@@ -1,29 +1,10 @@
 <!DOCTYPE html>
 <html lang="tr">
 	<head>
-
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XMQCRFM5MH"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-XMQCRFM5MH');
-		</script>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16467460377"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'AW-16467460377');
-		</script>
-
+		<?php include "google-scripts.php"; ?>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Bandırma Deniz Oto Kurtarıcı Çekici - 7/24 Yol Yardım</title>
+		<title>Görseller - Bandırma Deniz Oto Kurtarıcı Çekici - 7/24 Yol Yardım</title>
 		<?php include "head.php"; ?>
 	</head>
 	<body class="bg-gray-200">
@@ -36,68 +17,10 @@
 		<!-- Page Content (Initially Hidden) -->
 		<div class="page-content hidden">
 
-			<!-- Sticky Navbar -->
-			<nav class="fixed w-full top-0 z-50 bg-gray-800 bg-opacity-90 text-white">
-				<div class="container mx-auto">
-					<div class="flex justify-between items-center py-2">
-						<div class="ml-8 md:ml-12 mr-auto text-lg">Deniz Oto Kurtarma</div>
-						<!-- Responsive Menu Links (Initially Hidden) -->
-						<div id="menuLinks" class="hidden md:flex space-x-4 ml-auto mr-12">
-							<a href="#anasayfa" class="hover:bg-gray-700 px-3 py-4 rounded">Anasayfa</a>
-							<a href="#gorseller" class="hover:bg-gray-700 px-3 py-4 rounded">Görseller</a>
-							<a href="#hizmetlerimiz" class="hover:bg-gray-700 px-3 py-4 rounded">Hizmetlerimiz</a>
-							<a href="#iletisim" class="hover:bg-gray-700 px-3 py-4 rounded">İletişim</a>
-						</div>
-						<!-- Responsive Menu Button -->
-						<div class="md:hidden mx-6 pt-2 ml-auto">
-							<button id="menuBtn" onclick="toggleMenu()" class="text-white focus:outline-none">
-								<svg fill="#fff" viewBox="-2.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10"><path d="M.789 4.836a1.03 1.03 0 0 1 1.03-1.029h10.363a1.03 1.03 0 1 1 0 2.059H1.818A1.03 1.03 0 0 1 .79 4.836zm12.422 4.347a1.03 1.03 0 0 1-1.03 1.029H1.819a1.03 1.03 0 0 1 0-2.059h10.364a1.03 1.03 0 0 1 1.029 1.03zm0 4.345a1.03 1.03 0 0 1-1.03 1.03H1.819a1.03 1.03 0 1 1 0-2.059h10.364a1.03 1.03 0 0 1 1.029 1.03z"/></svg>
-							</button>
-						</div>					
-					</div>
-				</div>
-			</nav>
-
-			<!-- Off-canvas Menu -->
-			<div
-				id="offCanvasMenu"
-				class="off-canvas fixed top-0 h-screen bg-gray-600 z-50 transition-transform duration-300 ease-in-out left-[-250px] w-[250px]">
-				<ul>
-					<li><h2 class="py-4 px-6 text-sky-500 border-b border-white">Menü</h2></li>
-					<li>
-						<a href="#anasayfa" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
-							>Anasayfa</a>
-					</li>
-					<li>
-						<a href="#gorseller" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
-							>Görseller</a>
-					</li>
-					<li>
-						<a href="#hizmetlerimiz" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
-							>Hizmetlerimiz</a>
-					</li>
-					<li>
-						<a href="#iletisim" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
-							>İletişim</a>
-					</li>
-				</ul>
-			</div>
+			<?php include "navbar.php"; ?>
 
 			<!-- Content Sections -->
 			<main>
-				<div id="anasayfa" class="h-screen flex items-center justify-center text-xl bg-cover">
-					<!-- Anasayfa section -->
-					<div class="absolute bg-white bg-opacity-50 h-screen w-full z-10"></div>
-					<div class="z-20 text-center bg-black bg-opacity-70 mx-4 md:mx-12 px-6 py-12 text-gray-200 rounded-md">
-						<h1 class="text-4xl md:text-6xl font-bold pb-6">Deniz Oto Kurtarma</h1>
-						<p class="py-4 text-xl md:text-2xl">Bandırma merkezli olarak Balıkesir, Çanakkale ve Bursa bölgelerinde yol yardımı ve çekici/kurtarıcı hizmetimizle <span class="inline-block text-green-600 text-3xl md:text-4xl border border-white rounded-md p-1 md:p-2 bg-transparent hover:bg-white transition duration-300">7/24</span> yanınızdayız.
-						</p>
-						<p class="py-4 text-xl md:text-2xl">Size sadece bir telefon mesafesindeyiz.</p>
-						<p class="text-red-500 text-4xl md:text-5xl py-4">ACİL HATTIMIZ:</p>
-						<a href="tel:+905515530228" class="text-4xl md:text-5xl text-green-600">+90 551 553 0228</a>
-					</div>
-				</div>
-
 				<div id="gorseller" class="flex pt-24">
 					<!-- Görseller section -->
 					<div class="container mx-auto px-6 py-4">
@@ -248,57 +171,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div id="hizmetlerimiz" class="flex pt-24">
-					<!-- Görseller section -->
-					<div class="container mx-auto px-6 py-4">
-						<h2 class="text-4xl font-bold mb-10 text-center heading">Hizmetlerimiz</h2>
-						<div>
-							<ul class="text-xl">
-								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Araba Çekici Hizmeti</li>
-								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Motosiklet Çekici Hizmeti</li>
-								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Özel Araç Çekici Hizmeti</li>
-								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Elektrik Takviyesi Hizmeti</li>
-								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Aparatla Çekim Hizmeti</li>
-								<li class="border-2 border-amber-700 rounded-md p-3 mb-2 text-center">Ağır Ticari Araç Çekim Hizmeti (Tır, 10 Teker Kamyon, Kırkayak)</li>
-								<li class="border-2 border-amber-700 rounded-md p-3 text-center">Yeddiemin Otopark Hizmeti <span class="text-lg text-gray-600">(Otoparkımızda 7/24 görevli bulunmaktadır.)</span></li>
-							</ul>	
-						</div>
-					</div>
-				</div>
-
-				<div id="iletisim" class="flex text-xl pt-24 pb-96">
-					<!-- İletişim section -->
-					<div class="container mx-auto px-6 py-4">
-						<h2 class="text-4xl font-bold mb-12 text-center heading">İletişim</h2>
-						<div class="table w-full">
-							<div class="table-row-group">
-							<div class="table-row">
-								<div class="table-cell pt-4 font-bold">Adres:</div>
-								<div class="table-cell pl-6">600 Evler Mahallesi Yaşardoğu Caddesi No: 24</br>
-									10200 Bandırma / Balıkesir</div>
-							</div>
-							<div class="table-row">
-								<div class="table-cell pt-4 font-bold">Telefon:</div>
-								<div class="table-cell pl-6">
-									<a href="tel:+905515530228" class="block mb-2">+90 551 553 02 28</a>
-									<a href="tel:+905515530228" class="block">+90 266 721 44 60</a>
-								</div>
-							</div>
-							<div class="table-row">
-								<div class="table-cell pt-4 font-bold">E-posta:</div>
-								<div class="table-cell pl-6 overflow-auto">
-									<a href="mailto:denizotopark10@hotmail.com">denizotopark10 @ hotmail.com</a>
-								</div>
-							</div>
-							</div>
-						</div>
-						<div class="mt-10 rounded-md border-2 border-amber-700">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.23784716733!2d27.979440812062798!3d40.33706946036404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b5d39a952bb597%3A0x8f796a926081b5af!2zNjAwIEV2bGVyLCBZYcWfYXIgRG_En3UgQ2QuIE5vOjI0LCAxMDIwMCBCYW5kxLFybWEvQmFsxLFrZXNpcg!5e0!3m2!1sen!2str!4v1708343309539!5m2!1sen!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="h-80 w-full rounded-md"></iframe>
-						</div>
-
-					</div>
-				</div>
 			</main>
 
 			<!-- Scroll Up Button -->
@@ -329,6 +201,7 @@
 
 		</div>
 
+		<?php include "footer.php"; ?>
 		<?php include "custom-scripts.php"; ?>
 		<script src="assets/lightbox2/js/lightbox-plus-jquery.min.js"></script>
 	</body>

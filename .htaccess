@@ -1,16 +1,25 @@
-RewriteEngine On
-
-# Rule 1: HTTP request with "www" to HTTPS without "www"
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
-
-# Rule 2: HTTP request without "www" to HTTPS without "www"
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# Rule 3: HTTPS request with "www" to HTTPS without "www"
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteCond %{HTTPS} on
+RewriteEngine On
+
+# Rule 1: HTTP request with "www" to HTTPS without "www"
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteCond %{HTTPS} off
 RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# Rule 2: HTTP request without "www" to HTTPS without "www"
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Rule 3: HTTPS request with "www" to HTTPS without "www"
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteCond %{HTTPS} on
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# Rule 4: Remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*[^/])$ $1.php [L]
+
+# Redirect requests with .php to their equivalent without the extension
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+RewriteRule ^(.*)\.php$ /$1 [L,R=301]
