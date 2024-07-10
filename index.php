@@ -203,7 +203,7 @@
 					</div>
 				</div>
 
-				<div id="iletisim" class="flex text-xl pt-24 pb-96">
+				<div id="iletisim" class="flex text-xl pt-24 pb-36">
 					<!-- İletişim section -->
 					<div class="container mx-auto px-6 py-4">
 						<h2 class="text-4xl font-bold mb-12 text-center heading">İletişim</h2>
@@ -265,6 +265,7 @@
 
 		</div>
 
+		<?php include "footer.php"; ?>
 		<?php include "custom-scripts.php"; ?>
 		<script src="assets/lightbox2/js/lightbox-plus-jquery.min.js"></script>
 	</body>
