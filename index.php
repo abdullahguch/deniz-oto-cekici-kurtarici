@@ -1,133 +1,11 @@
 <!DOCTYPE html>
 <html lang="tr">
 	<head>
-
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XMQCRFM5MH"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-XMQCRFM5MH');
-		</script>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16467460377"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'AW-16467460377');
-		</script>
-
+		<?php include "google-scripts.php"; ?>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Bandırma Deniz Oto Kurtarıcı Çekici - 7/24 Yol Yardım</title>
-		<!-- Open Graph Meta Tags -->
-		<meta property="og:title" content="Bandırma Deniz Oto Kurtarıcı Çekici Ağır Ticari Araç Çekici">
-		<meta property="og:description" content="Oto kurtarıcı, çekici ve ağır ticari araç çekici hizmetiyle 7/24 hizmetinizdeyiz.">
-		<meta property="og:image" content="images/field.jpg">
-		<meta property="og:url" content="https://denizcekici.com.tr">
-		<!-- Add more Open Graph meta tags as needed -->
-		<meta name="description" content="Bandırma Deniz Oto Kurtarıcı Çekici Ağır Ticari Araç Çekici">
-		<meta name="keywords" content="bandırma çekici, bandırma oto kurtarıcı, ağır ticari araç kurtarıcı, ağır ticari araç çekici, bandırma deniz oto kurtarıcı, gönen oto kurtarıcı, gönen çekici, biga oto kurtarıcı, biga çekici, erdek oto kurtarıcı, erdek çekici, manyas oto kurtarıcı, manyas çekici, susurluk oto kurtarıcı, susurluk çekici, karacabey oto kurtarıcı, karacabey çekici">
-		<meta name="author" content="Bluteem Yazılım">
-		<meta name="robots" content="index, follow">
-		
-		<link rel="icon" href="images/favicon.ico">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-		<!-- Include Tailwind CSS via CDN -->
-		<script src="https://cdn.tailwindcss.com"></script>
-		<link href="assets/lightbox2/css/lightbox.min.css" rel="stylesheet" />
-		<style>
-			body {
-				font-family: "Inter", sans-serif;
-				font-optical-sizing: auto;
-				font-weight: 500;
-				font-style: normal;
-				font-variation-settings: "slnt" 0;				
-			}
-
-			/* Loading Screen Styles */
-			.loading-screen {
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background-color: #ffffff;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				z-index: 9999; /* Ensure the loader is on top of everything */
-			}
-
-			.loader {
-				border: 16px solid #f3f3f3;
-				border-top: 16px solid #3498db;
-				border-radius: 50%;
-				width: 120px;
-				height: 120px;
-				animation: spin 2s linear infinite;
-			}
-
-			@keyframes spin {
-				0% { transform: rotate(0deg); }
-				100% { transform: rotate(360deg); }
-			}
-
-			/* Hide the main content initially */
-			.page-content.hidden {
-				display: none;
-			}
-
-			#anasayfa {
-				background-image: url("images/field.jpg");
-			}
-			/* Off-canvas menu styles */
-			.off-canvas {
-				left: -250px;
-				width: 250px;
-			}
-
-			.off-canvas.open {
-				transform: translateX(250px);
-			}
-
-			/* Scoped styles (within your component's <style> tag) */
-			::-webkit-scrollbar {
-				width: 20px;
-				/* Increase scrollbar width */
-				background-color: rgba(31, 41, 55);
-				/* Semi-transparent background */
-			}
-
-			::-webkit-scrollbar-track {
-				background-color: transparent;
-			}
-
-			::-webkit-scrollbar-thumb {
-				background-color: #d6dee1;
-				border-radius: 20px;
-				/* Rounded corners */
-				border: 6px solid transparent;
-				background-clip: content-box;
-			}
-
-			::-webkit-scrollbar-thumb:hover {
-				background-color: #a8bbbf;
-			}
-
-			.heading {
-				background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);
-				color: transparent;
-				background-clip: text;
-				-webkit-background-clip: text;
-				position: relative;
-			}
-		</style>
+		<?php include "head.php"; ?>
 	</head>
 	<body class="bg-gray-200">
 
@@ -139,52 +17,7 @@
 		<!-- Page Content (Initially Hidden) -->
 		<div class="page-content hidden">
 
-			<!-- Sticky Navbar -->
-			<nav class="fixed w-full top-0 z-50 bg-gray-800 bg-opacity-90 text-white">
-				<div class="container mx-auto">
-					<div class="flex justify-between items-center py-2">
-						<div class="ml-8 md:ml-12 mr-auto text-lg">Deniz Oto Kurtarma</div>
-						<!-- Responsive Menu Links (Initially Hidden) -->
-						<div id="menuLinks" class="hidden md:flex space-x-4 ml-auto mr-12">
-							<a href="#anasayfa" class="hover:bg-gray-700 px-3 py-4 rounded">Anasayfa</a>
-							<a href="#gorseller" class="hover:bg-gray-700 px-3 py-4 rounded">Görseller</a>
-							<a href="#hizmetlerimiz" class="hover:bg-gray-700 px-3 py-4 rounded">Hizmetlerimiz</a>
-							<a href="#iletisim" class="hover:bg-gray-700 px-3 py-4 rounded">İletişim</a>
-						</div>
-						<!-- Responsive Menu Button -->
-						<div class="md:hidden mx-6 pt-2 ml-auto">
-							<button id="menuBtn" onclick="toggleMenu()" class="text-white focus:outline-none">
-								<svg fill="#fff" viewBox="-2.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10"><path d="M.789 4.836a1.03 1.03 0 0 1 1.03-1.029h10.363a1.03 1.03 0 1 1 0 2.059H1.818A1.03 1.03 0 0 1 .79 4.836zm12.422 4.347a1.03 1.03 0 0 1-1.03 1.029H1.819a1.03 1.03 0 0 1 0-2.059h10.364a1.03 1.03 0 0 1 1.029 1.03zm0 4.345a1.03 1.03 0 0 1-1.03 1.03H1.819a1.03 1.03 0 1 1 0-2.059h10.364a1.03 1.03 0 0 1 1.029 1.03z"/></svg>
-							</button>
-						</div>					
-					</div>
-				</div>
-			</nav>
-
-			<!-- Off-canvas Menu -->
-			<div
-				id="offCanvasMenu"
-				class="off-canvas fixed top-0 h-screen bg-gray-600 z-50 transition-transform duration-300 ease-in-out left-[-250px] w-[250px]">
-				<ul>
-					<li><h2 class="py-4 px-6 text-sky-500 border-b border-white">Menü</h2></li>
-					<li>
-						<a href="#anasayfa" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
-							>Anasayfa</a>
-					</li>
-					<li>
-						<a href="#gorseller" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
-							>Görseller</a>
-					</li>
-					<li>
-						<a href="#hizmetlerimiz" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
-							>Hizmetlerimiz</a>
-					</li>
-					<li>
-						<a href="#iletisim" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
-							>İletişim</a>
-					</li>
-				</ul>
-			</div>
+			<?php include "navbar.php"; ?>
 
 			<!-- Content Sections -->
 			<main>
@@ -432,60 +265,7 @@
 
 		</div>
 
-		<script>
-			// JavaScript to hide the loading screen and display the main content once all resources are loaded
-			window.addEventListener('load', function () {
-				// Select the loading screen and main content elements
-				var loadingScreen = document.querySelector('.loading-screen');
-				var mainContent = document.querySelector('.page-content');
-
-				// Hide the loading screen
-				loadingScreen.style.display = 'none';
-				// Show the main content
-				mainContent.classList.remove('hidden');
-			});
-
-			function toggleMenu() {
-				var menu = document.getElementById("offCanvasMenu");
-				var menuBtn = document.getElementById("menuBtn");
-				menu.classList.toggle("open");
-				menuBtn.classList.toggle("open");
-			}
-
-			// JavaScript for Scroll Up Button
-			window.onscroll = function () {
-				scrollFunction();
-			};
-
-			function scrollFunction() {
-				var scrollButton = document.getElementById("scrollButton");
-				if (document.documentElement.scrollTop > 20) {
-					scrollButton.classList.remove("hidden");
-				} else {
-					scrollButton.classList.add("hidden");
-				}
-			}
-
-			function scrollToTop() {
-				window.scrollTo({
-					top: 0,
-					behavior: "smooth",
-				});
-			}
-
-			// Hide off-canvas menu when navbar item is clicked on small screens
-			var navLinks = document.querySelectorAll("#menuLinks a");
-			navLinks.forEach(function (navLink) {
-				navLink.addEventListener("click", function () {
-					var menu = document.getElementById("offCanvasMenu");
-					var menuBtn = document.getElementById("menuBtn");
-					if (window.innerWidth < 768) {
-						menu.classList.remove("open");
-						menuBtn.classList.remove("open");
-					}
-				});
-			});
-		</script>
+		<?php include "custom-scripts.php"; ?>
 		<script src="assets/lightbox2/js/lightbox-plus-jquery.min.js"></script>
 	</body>
 </html>
