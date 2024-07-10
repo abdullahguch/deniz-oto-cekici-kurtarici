@@ -16,3 +16,8 @@ RewriteRule ^(.*[^/])$ $1.php [L]
 # Redirect requests with .php to their equivalent without the extension
 RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
 RewriteRule ^(.*)\.php$ /$1 [L,R=301]
+
+# Redirect non-existent pages to 404.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /404.php [L,R=404]
