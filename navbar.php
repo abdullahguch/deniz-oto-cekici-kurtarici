@@ -5,8 +5,8 @@
 						<a href="/" class="ml-8 md:ml-12 mr-auto text-lg">Deniz Oto Kurtarma</a>
 						<!-- Responsive Menu Links (Initially Hidden) -->
 						<div id="menuLinks" class="hidden md:flex space-x-4 ml-auto mr-12">
-							<a href="/gorseller" class="hover:bg-gray-700 px-3 py-4 rounded">Görseller</a>
 							<a href="/hizmetlerimiz" class="hover:bg-gray-700 px-3 py-4 rounded">Hizmetlerimiz</a>
+							<a href="/gorseller" class="hover:bg-gray-700 px-3 py-4 rounded">Görseller</a>
 							<a href="/iletisim" class="hover:bg-gray-700 px-3 py-4 rounded">İletişim</a>
 						</div>
 						<!-- Responsive Menu Button -->
@@ -26,12 +26,12 @@
 				<ul>
 					<li><h2 class="py-4 px-6 text-sky-500 border-b border-white">Menü</h2></li>
 					<li>
-						<a href="/gorseller" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
-							>Görseller</a>
-					</li>
-					<li>
 						<a href="/hizmetlerimiz" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
 							>Hizmetlerimiz</a>
+					</li>
+					<li>
+						<a href="/gorseller" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
+							>Görseller</a>
 					</li>
 					<li>
 						<a href="/iletisim" onclick="toggleMenu()" class="block py-4 px-6 text-white no-underline hover:bg-gray-800"
