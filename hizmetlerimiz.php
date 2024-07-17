@@ -4,7 +4,7 @@
 		<?php include "google-scripts.php"; ?>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Hizmetlerimiz - Bandırma Deniz Oto Kurtarıcı Çekici - 7/24 Yol Yardım</title>
+		<title>Bandırma Deniz Oto Kurtarıcı Çekici - 7/24 Yol Yardım - Hizmetlerimiz</title>
 		<?php include "head.php"; ?>
 	</head>
 	<body class="bg-gray-200">

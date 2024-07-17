@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sayfa Bulunumadı - Bandırma Deniz Oto Kurtarıcı Çekici - 7/24 Yol Yardım</title>
+		<title>Bandırma Deniz Oto Kurtarıcı Çekici - 7/24 Yol Yardım - Sayfa Bulunumadı</title>
 		<?php include "head.php"; ?>
 	</head>
 	<body class="bg-gray-200">
