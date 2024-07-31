@@ -1,5 +1,5 @@
         <!-- Open Graph Meta Tags -->
-        <meta property="og:title" content="Bandırma Deniz Oto Kurtarıcı Çekici Ağır Ticari Araç Çekici">
+        <meta property="og:title" content="Bandırma Deniz Çekici Oto Kurtarma 7/24 - 0551 553 0228">
 		<meta property="og:description" content="Oto kurtarıcı, çekici ve ağır ticari araç çekici hizmetiyle 7/24 hizmetinizdeyiz.">
 		<meta property="og:image" content="images/field.jpg">
 		<meta property="og:url" content="https://denizcekici.com.tr">

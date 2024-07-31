@@ -4,7 +4,7 @@
 		<?php include "google-scripts.php"; ?>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Bandırma Deniz Oto Kurtarma Çekici - 7/24 Yol Yardım</title>
+		<title>Bandırma Deniz Çekici Oto Kurtarma 7/24 - 0551 553 0228</title>
 		<?php include "head.php"; ?>
 	</head>
 	<body class="bg-gray-200">
@@ -25,12 +25,13 @@
 					<!-- Anasayfa section -->
 					<div class="absolute bg-white bg-opacity-50 h-screen w-full z-10"></div>
 					<div class="z-20 text-center bg-black bg-opacity-70 mx-4 md:mx-12 px-6 py-12 text-gray-200 rounded-md">
-						<h1 class="text-4xl md:text-6xl font-bold pb-6">Deniz Oto Kurtarma</h1>
-						<p class="py-4 text-xl md:text-2xl">Bandırma merkezli olarak Balıkesir, Çanakkale ve Bursa bölgelerinde yol yardımı ve çekici/kurtarıcı hizmetimizle <span class="inline-block text-green-600 text-3xl md:text-4xl border border-white rounded-md p-1 md:p-2 bg-transparent hover:bg-white transition duration-300">7/24</span> yanınızdayız.
+						<h1 class="text-4xl md:text-6xl font-bold pb-6">Deniz Çekici</h1>
+						<p class="py-4 text-xl md:text-2xl">Bandırma merkezli olarak Balıkesir, Biga ve Karacabey bölgelerinde <span class="inline-block text-green-600 text-3xl md:text-4xl border border-white rounded-md p-1 md:p-2 bg-transparent hover:bg-white transition duration-300">7/24</span> çekici - kurtarıcı hizmeti.
 						</p>
-						<p class="py-4 text-xl md:text-2xl">Size sadece bir telefon mesafesindeyiz.</p>
-						<p class="text-red-500 text-4xl md:text-5xl py-4">ACİL HATTIMIZ:</p>
-						<a href="tel:+905515530228" class="text-4xl md:text-5xl text-green-600">+90 551 553 0228</a>
+						<div class="p-4 border border-white rounded-md inline-block">
+							<p class="text-red-500 text-4xl md:text-5xl pb-4">ACİL HATTIMIZ:</p>
+							<a href="tel:+905515530228" class="text-4xl md:text-5xl text-green-600">0551 553 0228</a>
+						</div>
 					</div>
 				</div>
 			</main>

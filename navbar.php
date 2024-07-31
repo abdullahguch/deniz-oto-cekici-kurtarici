@@ -2,7 +2,7 @@
 			<nav class="fixed w-full top-0 z-50 bg-gray-800 bg-opacity-90 text-white">
 				<div class="container mx-auto">
 					<div class="flex justify-between items-center py-2">
-						<a href="/" class="ml-8 md:ml-12 mr-auto text-lg">Deniz Oto Kurtarma</a>
+						<a href="/" class="ml-8 md:ml-12 mr-auto text-lg">Deniz Çekici</a>
 						<!-- Responsive Menu Links (Initially Hidden) -->
 						<div id="menuLinks" class="hidden md:flex space-x-4 ml-auto mr-12">
 							<a href="/hizmetlerimiz" class="hover:bg-gray-700 px-3 py-4 rounded">Hizmetlerimiz</a>
