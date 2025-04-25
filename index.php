@@ -28,9 +28,9 @@
         <div class="absolute bg-white bg-opacity-50 h-screen w-full z-10"></div>
         <div class="z-20 text-center bg-black bg-opacity-70 mx-4 md:mx-12 px-6 py-12 text-gray-200 rounded-md">
           <h1 class="text-4xl md:text-6xl font-bold pb-6">Bandırma Çekici Oto Kurtarma</h1>
-          <p class="py-4 text-xl md:text-2xl">Bandırma merkezli olarak Balıkesir, Biga ve Karacabey bölgelerinde <span class="inline-block text-green-600 text-3xl md:text-4xl border border-white rounded-md p-1 md:p-2 bg-white">7/24</span> çekici - kurtarıcı hizmeti.
+          <p class="py-4 text-xl md:text-2xl mb-4">Bandırma merkezli olarak Balıkesir, Biga ve Karacabey bölgelerinde <span class="inline-block text-green-600 text-3xl md:text-4xl border border-white rounded-md p-1 md:p-2 bg-white">7/24</span> çekici - kurtarıcı hizmeti.
           </p>
-          <div class="p-4 border border-white rounded-md inline-block">
+          <div class="p-4 border border-white bg-white rounded-md inline-block">
             <p class="text-red-500 text-4xl md:text-5xl pb-4">ACİL HATTIMIZ:</p>
             <a href="tel:+905515530228" class="text-4xl md:text-5xl text-green-600">0551 553 0228</a>
           </div>
